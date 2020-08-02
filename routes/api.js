@@ -14,7 +14,7 @@ exports.route = (app) => {
 
     //addExercise
     app.put("/api/workouts/:id", ({body}, res) => {
-        Workout.create(body)
+        Workout.updateOne(body)
         .then(dbWorkout => {
             res.json(dbWorkout);
         })
