@@ -18,6 +18,7 @@ exports.route = (app) => {
         Workout.findByIdAndUpdate(id, req.body)
             .then(dbWorkout => {
                 res.json(dbWorkout);
+                console.log(dbWorkout);
             })
             .catch(err => {
                 res.status(400).json(err);
@@ -41,16 +42,18 @@ exports.route = (app) => {
             'day':
             {
                 $lte: new Date().setDate(new Date().getDate()),
-                $gte: new Date().setDate(new Date().getDate()-5)
+                $gte: new Date().setDate(new Date().getDate()-7)
             }
         })
         .then(workoutdb => {
             res.json(workoutdb);
-            console.log(workoutdb);
         });
     });
 
     app.get('/exercise', (req, res) => {
+        res.sendFile(__dirname + '/public/exercise.html');
+    });
+    app.get('/exercise?id', (req, res) => {
         res.sendFile(__dirname + '/public/exercise.html');
     });
     app.get('/stats', (req,res) => {
