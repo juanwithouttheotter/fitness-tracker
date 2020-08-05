@@ -1,4 +1,4 @@
-const Workout = require("../models/workoutModels");
+const Workout = require("./models/workoutModels");
 
 exports.route = (app) => {
     //getLastWorkout
@@ -50,5 +50,11 @@ exports.route = (app) => {
         });
     });
 
+    app.get('/exercise', (req, res) => {
+        res.sendFile(__dirname + '/public/exercise.html');
+    });
+    app.get('/stats', (req,res) => {
+        res.sendFile(__dirname + '/public/stats.html');
+    });
 
 }
