@@ -15,7 +15,7 @@ exports.route = (app) => {
     //addExercise
     app.put("/api/workouts/:id", (req, res) => {
         const id = req.params.id;
-        Workout.findByIdAndUpdate(id, req.body)
+        Workout.findByIdAndUpdate(id, {$push:{exercises:req.body}}, {new: true})
             .then(dbWorkout => {
                 res.json(dbWorkout);
                 console.log(dbWorkout);

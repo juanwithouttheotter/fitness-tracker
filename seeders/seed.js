@@ -25,7 +25,7 @@ let workoutSeed = [
     day: new Date().setDate(new Date().getDate()-9),
     exercises: [
       {
-        Exercise_type: "resistance",
+        type: "resistance",
         name: "Lateral Pull",
         duration: 20,
         weight: 300,
@@ -38,7 +38,7 @@ let workoutSeed = [
     day: new Date().setDate(new Date().getDate()-8),
     exercises: [
       {
-        Exercise_type: "resistance",
+        type: "resistance",
         name: "Push Press",
         duration: 25,
         weight: 185,
@@ -51,7 +51,7 @@ let workoutSeed = [
     day: new Date().setDate(new Date().getDate()-7),
     exercises: [
       {
-        Exercise_type: "cardio",
+        type: "cardio",
         name: "Running",
         duration: 25,
         distance: 4
@@ -62,7 +62,7 @@ let workoutSeed = [
     day: new Date().setDate(new Date().getDate()-6),
     exercises: [
       {
-        Exercise_type: "resistance",
+        type: "resistance",
         name: "Bench Press",
         duration: 20,
         weight: 285,
@@ -75,7 +75,7 @@ let workoutSeed = [
     day: new Date().setDate(new Date().getDate()-5),
     exercises: [
       {
-        Exercise_type: "resistance",
+        type: "resistance",
         name: "Bench Press",
         duration: 20,
         weight: 300,
@@ -88,7 +88,7 @@ let workoutSeed = [
     day: new Date().setDate(new Date().getDate()-4),
     exercises: [
       {
-        Exercise_type: "resistance",
+        type: "resistance",
         name: "Quad Press",
         duration: 30,
         weight: 300,
@@ -101,7 +101,7 @@ let workoutSeed = [
     day: new Date().setDate(new Date().getDate()-3),
     exercises: [
       {
-        Exercise_type: "resistance",
+        type: "resistance",
         name: "Bench Press",
         duration: 20,
         weight: 300,
@@ -114,7 +114,7 @@ let workoutSeed = [
     day: new Date().setDate(new Date().getDate()-2),
     exercises: [
       {
-        Exercise_type: "resistance",
+        type: "resistance",
         name: "Military Press",
         duration: 20,
         weight: 300,
@@ -127,7 +127,7 @@ let workoutSeed = [
     day: new Date().setDate(new Date().getDate()-1),
     exercises: [
       {
-        Exercise_type: "resistance",
+        type: "resistance",
         name: "Bench",
         duration: 30,
         distance: 2
